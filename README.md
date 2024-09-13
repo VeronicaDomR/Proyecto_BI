@@ -22,3 +22,10 @@ Este script carga un dataset de Airbnb desde un archivo CSV y realiza varias tra
 3. **Manejo de Datos Nulos**: Antes y después de la asignación de los tipos de habitación, se verifican los valores nulos en la columna `room_type`.
 
 Este proceso automatiza la clasificación de las propiedades según el nombre del anuncio en función de palabras clave predefinidas.
+
+## Imputación de valores faltantes en number_of_reviews
+
+Se implementó la imputación de los valores faltantes (`NaN`) en la columna `number_of_reviews`. El método de imputación se basó en la fecha de la última revisión (`last_review`) y el promedio de reseñas mensuales (`reviews_per_month`). 
+
+Para calcular el valor imputado, se determinó el número de meses entre una fecha de inicio predefinida y la fecha de la última revisión (`last_review`), multiplicando dicho valor por el promedio de reseñas mensuales (`reviews_per_month`).
+
