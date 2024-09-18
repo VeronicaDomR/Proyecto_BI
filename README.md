@@ -70,3 +70,18 @@ Otras variables dentro del dataset también pueden tener valores duplicados, per
 
 2. **Eliminación de Valores Extraños**: Se identificaron y eliminaron valores extraños o incoherentes en la columna `name`, manteniendo únicamente entradas válidas y mejorando así la calidad de los datos.
 
+## Integración y Relación de Datos en PowerBI
+
+En el proceso de integración de datos utilizando PowerBI, se llevó a cabo una comprobación de los tipos de datos en las tablas limpias y se establecieron relaciones entre ellas para facilitar el análisis y visualización.
+
+### Tablas y Relaciones
+![](images/cardinalidad_powerbi.png)
+- **Tablas Involucradas**:
+  1. `hosts_clean`: Contiene información sobre los anfitriones.
+  2. `rooms_clean`: Almacena detalles específicos de las habitaciones o propiedades.
+  3. `reviews_clean`: Incluye información relacionada con las reseñas y evaluaciones.
+
+- **Relaciones Establecidas**:
+  - `hosts_clean` y `reviews_clean` están relacionadas a través del campo `host_id`.
+  - `rooms_clean` y `reviews_clean` están conectadas mediante el campo `id`, asegurando una relación directa entre la propiedad y sus reseñas.
+
