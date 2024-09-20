@@ -2,6 +2,36 @@
 
    ![](images/airbnb.png)
 
+# Índice
+
+1. [Objetivo](#objetivo)
+2. [Resumen de Preprocesamiento de Datos](#resumen-de-preprocesamiento-de-datos)
+3. [Manejo e Imputación de Valores Faltantes en Dataset de Airbnb](#manejo-e-imputación-de-valores-faltantes-en-dataset-de-airbnb)
+   - 3.1. [Manejo de Nulos en `name`, `host_name`, y `room_type`](#manejo-de-nulos-en-name-host_name-y-room_type)
+   - 3.2. [Asignación de Tipos de Habitación](#asignación-de-tipos-de-habitación)
+   - 3.3. [Imputación de Valores Faltantes en `last_review`](#imputación-de-valores-faltantes-en-last_review)
+   - 3.4. [Corrección e Imputación de `reviews_per_month`](#corrección-e-imputación-de-reviews_per_month)
+   - 3.5. [Imputación de Valores Faltantes en `number_of_reviews`](#imputación-de-valores-faltantes-en-number_of_reviews)
+   - 3.6. [Imputación de `price` usando `neighbourhood` y `neighbourhood_group`](#imputación-de-price-usando-neighbourhood-y-neighbourhood_group)
+4. [Recuento Final de Valores Nulos](#recuento-final-de-valores-nulos)
+5. [Manejo de Duplicados](#manejo-de-duplicados)
+6. [Identificación y Manejo de Datos Discrepantes en Variables Categóricas](#identificación-y-manejo-de-datos-discrepantes-en-variables-categóricas)
+7. [Integración y Relación de Datos en PowerBI](#integración-y-relación-de-datos-en-powerbi)
+   - 7.1. [Tablas y Relaciones](#tablas-y-relaciones)
+8. [Análisis Exploratorio](#análisis-exploratorio)
+   - 8.1. [Distribución Geográfica de Anfitriones](#distribución-geográfica-de-anfitriones)
+   - 8.2. [Distribución de Tipos de Habitaciones por Vecindario](#distribución-de-tipos-de-habitaciones-por-vecindario)
+   - 8.3. [Disponibilidad y Precios](#disponibilidad-y-precios)
+9. [Conclusiones](#conclusiones)
+10. [Recomendaciones](#recomendaciones)
+   - 10.1. [Optimización de Precios por Temporada y Vecindario](#optimización-de-precios-por-temporada-y-vecindario)
+   - 10.2. [Marketing Segmentado](#marketing-segmentado)
+   - 10.3. [Análisis de Competencia Local](#análisis-de-competencia-local)
+   - 10.4. [Diversificación de Ofertas](#diversificación-de-ofertas)
+11. [Recursos](#recursos)
+   - 11.1. [Dashboard](#dashboard)
+   - 11.2. [Presentación](#presentación)
+
    ## Objetivo 
    Analizar y explorar los datos relacionados con la disponibilidad de habitaciones en Airbnb utilizando herramientas y técnicas de Business Intelligence (BI), con el fin de:
 
