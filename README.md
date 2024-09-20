@@ -85,3 +85,47 @@ En el proceso de integración de datos utilizando PowerBI, se llevó a cabo una 
   - `hosts_clean` y `reviews_clean` están relacionadas a través del campo `host_id`.
   - `rooms_clean` y `reviews_clean` están conectadas mediante el campo `id`, asegurando una relación directa entre la propiedad y sus reseñas.
 
+## Análisis Exploratorio
+
+## Conclusiones
+
+### 1. Distribución Geográfica de Anfitriones
+
+La mayoría de los anfitriones están en **Manhattan**, seguido por **Brooklyn**. Esto subraya que estos barrios no solo tienen la mayoría de las propiedades, sino también la mayor cantidad de anfitriones activos, lo que puede indicar una competitividad más alta en estas áreas.
+
+### 2. Distribución de Tipos de Habitaciones por Vecindario
+
+**Manhattan** tiene un mayor porcentaje de apartamentos/casas enteras disponibles, mientras que en otros vecindarios como **Brooklyn** y **Queens**, las habitaciones privadas tienen una representación significativa. Esto puede reflejar diferencias en el tipo de viajeros que visitan cada área o en las restricciones locales de alquiler.
+
+### 3. Disponibilidad y Precios
+
+Hay variaciones significativas en la disponibilidad y los precios a lo largo del año, que podrían ser explotadas para maximizar la rentabilidad. Por ejemplo, los precios en **Manhattan** se disparan durante ciertos meses, lo cual puede estar relacionado con eventos específicos o temporadas turísticas altas.
+
+
+## Recomendaciones
+
+### 1. Optimización de Precios por Temporada y Vecindario
+
+Implementa estrategias de precios dinámicos basadas no solo en la temporada, sino también en eventos locales importantes que puedan aumentar la demanda temporalmente.
+
+### 2. Marketing Segmentado
+
+Considera campañas de marketing diferenciadas que apunten a los tipos de viajeros más comunes en cada vecindario. Por ejemplo, campañas orientadas a viajeros de negocios en **Manhattan** y a turistas económicos en **Queens**.
+
+### 3. Análisis de Competencia Local
+
+Dado que hay una gran cantidad de anfitriones en áreas clave, analiza qué están ofreciendo otros anfitriones en términos de comodidades y precios para asegurarte de que tus listados sean competitivos.
+
+### 4. Diversificación de Ofertas
+
+En áreas con alta concentración de habitaciones privadas, considera ofrecer servicios adicionales o experiencias únicas para diferenciarte de la competencia.
+
+### 5. Expansión Estratégica
+
+Investiga la posibilidad de expandir ofertas en **Staten Island** y **Bronx**, donde la competencia es menor, lo que podría ofrecer un retorno más alto sobre la inversión debido a la menor saturación del mercado.
+
+## Recursos
+
+## Dashboard 
+![Dashboard](images/dashboard.png)
+Puedes acceder a mi dashboard de Power BI haciendo clic [aquí](pdf/Dashboardpowerbi.pdf).
