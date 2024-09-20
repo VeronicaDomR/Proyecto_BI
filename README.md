@@ -131,3 +131,7 @@
    ## Dashboard 
    ![Dashboard](images/dashboard.png)
    Puedes acceder a mi dashboard de Power BI haciendo clic [aquí](pdf/Dashboardpowerbi.pdf).
+
+   ## Presentación
+   ![Presentación](images/presentacion.png)
+   Puedes acceder a mi dashboard de Power BI haciendo clic [aquí](https://www.canva.com/design/DAGRQdfqecY/OutrLgu8QG9JxGAdcrGG8Q/view?utm_content=DAGRQdfqecY&utm_campaign=designshare&utm_medium=link&utm_source=editor).
