@@ -115,6 +115,34 @@
    - `hosts_clean` y `reviews_clean` están relacionadas a través del campo `host_id`.
    - `rooms_clean` y `reviews_clean` están conectadas mediante el campo `id`, asegurando una relación directa entre la propiedad y sus reseñas.
 
+   ## Fórmulas DAX Implementadas
+
+### 1. Huéspedes Potenciales por Año
+Esta fórmula DAX calcula el número total de huéspedes que cada barrio podría recibir en un año, suponiendo que todas las habitaciones estén disponibles todos los días del año y considerando el número mínimo de noches permitidas para reservar cada habitación.
+
+```DAX
+Huéspedes_Potenciales = 
+SUMX(
+    'rooms_clean_fixed',
+    DIVIDE(
+        365,
+        'rooms_clean_fixed'[minimum_nights],
+        0
+    )
+)
+```
+### 2. Porcentaje de Habitaciones Disponibles
+Esta fórmula DAX calcula el porcentaje de habitaciones disponibles por barrio, utilizando la cantidad total de habitaciones y las habitaciones disponibles actuales. Esto proporciona una visión clara del uso del espacio en cada barrio, permitiendo una mejor planificación y optimización.
+```
+Porcentaje_Habitaciones_Disponibles = 
+SUMMARIZE(
+    'rooms_clean_fixed',
+    'rooms_clean_fixed'[neighbourhood],
+    "Total_Habitaciones", COUNT('rooms_clean_fixed'[id]),
+    "Porcentaje_Habitaciones_Disponibles", DIVIDE(COUNT('rooms_clean_fixed'[id]), [Total_Habitaciones], 0) * 100
+)
+```
+
    ## Análisis Exploratorio
 
    ## Conclusiones
