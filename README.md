@@ -1,6 +1,6 @@
    # Proyecto_BI
 
-   ![](images/airbnb-tri.jpg)
+   ![](images/airbnb.png)
 
    ## Objetivo 
    Analizar y explorar los datos relacionados con la disponibilidad de habitaciones en Airbnb utilizando herramientas y técnicas de Business Intelligence (BI), con el fin de:
