@@ -159,6 +159,7 @@ SUMMARIZE(
    ### 2. Distribución de Tipos de Habitaciones por Vecindario
 
    ![](images/tipohabitacion.png)
+   
    **Manhattan** tiene un mayor porcentaje de apartamentos/casas enteras disponibles, mientras que en otros vecindarios como **Brooklyn** y **Queens**, las habitaciones privadas tienen una representación significativa. Esto puede reflejar diferencias en el tipo de viajeros que visitan cada área o en las restricciones locales de alquiler.
 
    ### 3. Disponibilidad y Precios
